@@ -15,13 +15,13 @@ n_pade = 20
 ( num_pade , den_pade ) = cnt.pade ( Theta , n_pade )
 H_pade = cnt.tf( num_pade , den_pade )
 Hs = cnt.series (H , H_pade)
-Hmf = cnt.feedback(Hs, 1)
+Hmf = cnt.feedback(Hs, 1) # comentar essa parte para mudar a malha
 
 t = np . linspace (0 ,40, 100)
 (t , y ) = cnt.step_response ( 3*Hs, t )
-(t , y1 ) = cnt.step_response ( 3*Hmf, t )
+(t , y1 ) = cnt.step_response ( 3*Hmf, t )# comentar essa parte para mudar a malha
 plt.plot (t , y )
-plt.plot (t , y1 )
+plt.plot (t , y1 )# comentar essa parte para mudar a malha
 plt.xlabel ( ' t [ s ] ')
 plt.ylabel('Amplitude')
 plt.title('')
