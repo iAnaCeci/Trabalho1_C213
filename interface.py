@@ -79,3 +79,5 @@ resultado_tree.heading('4', text='Kd/Td')
 resultado_tree.grid(row=1, column=0, padx=10, pady=10)
 
 root.mainloop()
+#codigo so mostra os valores das variaveis
+#Crie uma interface que permita com que o usuário entre com os dados os parâmetros do PID e do Setpoint.
